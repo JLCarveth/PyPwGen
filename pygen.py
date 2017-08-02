@@ -24,7 +24,8 @@ def generate(num):
         
         i = 1
 
-        # Go through the word file finding the cooresponding line numbers
+        # Go through the word file finding the cooresponding line numbers.
+        # line.strip() removes any tags (like '\n')
         for line in file:
             if i == r1:
                 w1 = line.strip()
